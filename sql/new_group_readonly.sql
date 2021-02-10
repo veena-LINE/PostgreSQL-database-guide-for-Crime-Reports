@@ -1,0 +1,6 @@
+CREATE GROUP readonly NOLOGIN;
+
+GRANT CONNECT ON DATABASE crimes_db TO readonly;
+GRANT USAGE ON SCHEMA crimes TO readonly;
+GRANT SELECT ON ALL TABLES IN SCHEMA crimes TO readonly;
+
